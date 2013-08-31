@@ -16,6 +16,6 @@ A tumblr theme that will accomodate all posts types and include:
 
 ## Roles
 
-Lead: @troyth
-Design: @kyongkim
-Dev: @ebberly
+Lead: @troyth  
+Design: @kyongkim  
+Dev: @ebberly  
