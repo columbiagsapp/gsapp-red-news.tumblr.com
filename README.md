@@ -1,6 +1,6 @@
 # GSAPP RED Review
 
-A catch-all for RED related news and a student-run blog for school and industry updates.
+A catch-all for RED related news and a student-run tumblr (blog) for school and industry updates. The tumblr will feed content into the GSAPP website.
 
 ## Format
 
@@ -8,6 +8,7 @@ A tumblr theme that will accomodate all posts types and include:
 
 *   live feed of the next two upcoming RED-tagged events from events.gsapp.org
 *   live feed of the latest two RED-tagged posts from ccgsapp.org
+*	dedicated space for latest CURE news
 *   page with directory of all current students with photos, names and links to LinkedIn profiles, highlighting program council and RED Review editors
 *   page incorporating RED travel twitter feeds (~January each year)
 *   page listing all previous RED newsletters (links to Mailchimp newsletters)
