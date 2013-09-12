@@ -11,7 +11,7 @@ A tumblr theme that will accomodate all posts types and include:
 *	dedicated space for latest CURE news
 *   page with directory of all current students with photos, names and links to LinkedIn profiles, highlighting program council and RED Review editors
 *   page incorporating RED travel twitter feeds (~January each year)
-*   page listing all previous RED newsletters (links to Mailchimp newsletters)
+*   page listing all previous RED newsletters (links to Mailchimp newsletters) - should there be a signup?
 *   list of resources for RED alumni
 *   consideration for sticky major announcements (banner? medalion?) such as "CURE Benefit MM/DD"
 
