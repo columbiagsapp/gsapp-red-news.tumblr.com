@@ -22,8 +22,10 @@ Filters
 
 * All
 * Alumni
-* Class of 2014
+* Class of 2014 (or Student Profiles)
 * CURE
+* Interdisciplinary
+* Guest Speakers
 * Durst
 
 Local Static Pages
@@ -37,6 +39,8 @@ External Links
 * [CURE] (http://www.arch.columbia.edu/centers/cure-center-urban-real-estate)
 * [MSRED Program](http://www.arch.columbia.edu/programs/real-estate-development)
 * [RED Events](http://events.gsapp.org/tagged/red)
+* [GSAPP Alumni](http://www.arch.columbia.edu/alumni)
+* [CURE Research](http://www.arch.columbia.edu/centers/cure-center-urban-real-estate/research)
 * [Facebook]()
 * [LinkedIn]()
 * [Twitter]()
