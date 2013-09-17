@@ -133,11 +133,7 @@ body {
       word-wrap: normal;
     }
     
-    #nav{
-      	margin: 0 0 50px;
-      	overflow: auto;
-    }
-
+    
     #mainnav{
       float:left;
     }
@@ -486,7 +482,7 @@ html[xmlns] .clearfix {
 /* -----------  RED CUSTOM CSS (@ebberly) ---------------------------------------*/
 
 #main {
-  margin-top: 150px;
+  margin-top: 180px;
 
 }
 
@@ -526,8 +522,11 @@ html[xmlns] .clearfix {
 }
 
 .text-title {
-font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-font-weight:300;
+/*font-family:'Times LT W01 Roman';*/
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+  font-weight:200;
+
 font-size:40px;
 line-height:44px;
 }
@@ -563,4 +562,19 @@ div.realpost { margin-bottom: 0px; }
   display:none;
   
 }
+
+#nav{
+        position:fixed;
+        margin:0px;
+        margin-top: 160px;
+        overflow: auto;
+
+        font-weight:bold;
+    }
+
+  ul #filters {
+      -webkit-margin-after: 0em;
+      -webkit-margin-before: 0em;
+      list-style-type: none;
+    }
 
