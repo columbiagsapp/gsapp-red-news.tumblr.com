@@ -82,11 +82,11 @@ body {
     }
 
     .postwrapper{
-      margin-left:160px;
+      margin-left:180px;
       overflow:hidden;
       word-wrap: break-word;
       width:440px;
-      margin-top:260px;
+      margin-top:60px;
     }
     
     .text.post blockquote, .post.quote blockquote, blockquote {  
@@ -98,7 +98,7 @@ body {
       margin-top: 0; 
     }
     
-    div.realpost { margin-bottom: 7em; }
+    
 
     .brickwall .realpost {margin-bottom: 0;}
     
@@ -115,11 +115,11 @@ body {
     
     #header {
     	width: 100%;
-      height: 200px;
+      height: 205px;
       background-color:#FFFFFF;
       position: fixed;
       overflow: hidden;
-      padding: 25px 0 0 40px;
+      padding: 28px 0 0 30px;
       clear: both;
       z-index: 10000;
     }
@@ -308,7 +308,7 @@ html[xmlns] .clearfix {
     	float: left;
     	width: 250px;
       font: bold 13px/17px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      margin-bottom: 7em;
+      margin-bottom: 0px;
       margin-top: 10px;
     }
 
@@ -481,3 +481,86 @@ html[xmlns] .clearfix {
 #filter{
   height:29px;
 }
+
+
+/* -----------  RED CUSTOM CSS (@ebberly) ---------------------------------------*/
+
+#main {
+  margin-top: 150px;
+
+}
+
+#title_logo {
+  font-size:24px;
+  
+}
+
+
+
+/*- Post Header ---------*/
+
+.date_type {
+  font-size: 12px;
+  color:#007eff;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+}
+
+.date {
+  float:left;
+
+}
+
+.type {
+  float:right;
+  width:150px;
+  margin-right:10px;
+}
+
+
+/* --- Post Body ------- */
+
+.text-body {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 14px;
+}
+
+.text-title {
+font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+font-weight:300;
+font-size:40px;
+line-height:44px;
+}
+
+
+.post {
+  border-top:1px solid #000;
+  padding-top:7px;
+  margin-bottom:0px;
+
+}
+
+.postwrapper {
+  margin-bottom:0px;
+  padding-bottom: 0px;
+}
+
+div.realpost { margin-bottom: 0px; }
+
+
+.text-title {
+  margin-top:30px;
+}
+
+#CU_logo {
+  position: fixed;
+  float:right;
+  margin-left:630px;
+  top:0%;
+}
+
+.text-body {
+  display:none;
+  
+}
+
