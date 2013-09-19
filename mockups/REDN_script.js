@@ -2,19 +2,33 @@ $(document).ready( function() {
 console.log("REDN Loaded");
 
 $(window).scroll(function(){
-				var scrollTop = 180;
+				var scrollTop1 = 30;
+				var scrollTop2 = 180;
+
+
 				var scrolled = $(window).scrollTop();
 					console.log(scrolled);
 
-				if(scrolled >= scrollTop){	
-					$('#header').css({position: 'fixed', top: '-150px'})
+				if(scrolled >= scrollTop1){
+					$('#CU_logo').css({position: 'fixed',  'top':'0%'})
+
+				}
+
+				if(scrolled <= scrollTop1){
+					$('#CU_logo').css({position: 'relative',  'top':'0%'})
+				}
+
+
+				if(scrolled >= scrollTop2){	
+					$('#logo').css({position: 'fixed', top: '-150px'})
 					$('#nav').css({position: 'fixed', top: '114px'})
-					$('#blogroll').css({position: 'relative', 'margin-top': '260px'})
+					//$('#blogroll').css({position: 'relative', 'margin-top': '260px'})
+
 
 
 					}
-				if(scrolled < scrollTop){	
-					$('#header').css({position: 'relative', top: '0px'})
+				if(scrolled < scrollTop2){	
+					$('#logo').css({position: 'relative', top: '0px'})
 					$('#nav').css({position: 'relative', top: '0px'})
 					$('#blogroll').css({position: 'relative', 'margin-top': '0px'})
 

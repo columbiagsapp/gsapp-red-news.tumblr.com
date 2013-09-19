@@ -534,10 +534,9 @@ div.realpost { margin-bottom: 0px; }
 }
 
 #CU_logo {
-  position: fixed;
-  float:right;
+  position:relative;
   margin-left:630px;
-  top:0%;
+  
 }
 
 .text-body {
