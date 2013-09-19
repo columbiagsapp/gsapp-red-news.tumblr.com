@@ -549,10 +549,8 @@ div.realpost { margin-bottom: 0px; }
 #nav{
         position:relative;
         margin:0px;
-        margin-top: 57px;
         width:140px;
         float:left;
-
         overflow: auto;
         font-family:'HelveticaNeueW01-75Bold';
         font-size:15px;
