@@ -82,7 +82,7 @@ body {
     }
 
     .postwrapper{
-      margin-left:180px;
+      margin-left:150px;
       overflow:hidden;
       word-wrap: break-word;
       width:440px;
@@ -108,22 +108,10 @@ body {
       blockquote ul, blockquote ol { padding-left: 2em; }
     ul, ol { padding-left: 0; }
     
-    /* Specific elements. */
-    #wrapper {
-    	padding: 90px 40px;
-    }
-    
-    #header {
-    	width: 100%;
-      height: 205px;
-      background-color:#FFFFFF;
-      position: fixed;
-      overflow: hidden;
-      padding: 28px 0 0 30px;
-      clear: both;
-      z-index: 10000;
-    }
 
+
+    /* Specific elements. */
+   
     #headertitle-container{
       width:100%;
       min-width:1024px;
@@ -275,31 +263,7 @@ html[xmlns] .clearfix {
     
     /* Tag Colors */
     
-    a.NYC {color: #00D6FF !important}
-    a.nyc {color: #00D6FF !important}
-    a.Rio {color: #00E652 !important}
-    a.rio {color: #00E652 !important}
-    a.SaoPaulo {color: #00E652 !important}
-    a.Sao-Paulo {color: #00E652 !important}
-    a.saopaulo {color: #00E652 !important}
-    a.sao-paulo {color: #00E652 !important}
-    a.amman {color: #FF00A6 !important}
-    a.Amman {color: #FF00A6 !important}
-    a.ammanlab {color: #FF00A6 !important}
-    a.amman-lab {color: #FF00A6 !important}
-    a.AmmanLab {color: #FF00A6 !important}
-    a.Amman-Lab {color: #FF00A6 !important}
-    a.mumbai {color: #FF9E00 !important}
-    a.Mumbai {color: #FF9E00 !important}
-	a.beijing {color: #FF555A !important}
-	a.Beijing {color: #FF555A !important}
-	a.tokyo {color: #FF555A !important}
-    a.Tokyo {color: #FF555A !important}
-    a.tokyolab {color: #FF555A !important}
-    a.tokyo-lab {color: #FF555A !important}
-    a.TokyoLab {color: #FF555A !important}
-    a.Tokyo-Lab {color: #FF555A !important}
-     
+ 
 	 .sidebar {
     	float: left;
     	width: 250px;
@@ -479,10 +443,27 @@ html[xmlns] .clearfix {
 }
 
 
-/* -----------  RED CUSTOM CSS (@ebberly) ---------------------------------------*/
+/* -----------  RED CUSTOM CSS (@ebberly) ---------------------------------------------------*/
+
+
+#wrapper {
+      padding: 30px 30px;
+    }
+    
+#header {
+      width: 100%;
+      height: 205px;
+      background-color:#FFFFFF;
+      position: relative;
+      overflow: hidden;
+      padding: 0px 0 0 0px;
+      clear: both;
+      z-index: 100;
+    }
+
 
 #main {
-  margin-top: 180px;
+  margin-top: 55px;
 
 }
 
@@ -491,9 +472,14 @@ html[xmlns] .clearfix {
   
 }
 
+/*--- Post General --------*/
 
+.postwrapper {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
-/*- Post Header ---------*/
+/*--- Post Header  --------*/
 
 .date_type {
   font-size: 12px;
@@ -522,9 +508,8 @@ html[xmlns] .clearfix {
 }
 
 .text-title {
-/*font-family:'Times LT W01 Roman';*/
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-
+font-family:'Times LT W01 Roman'; 
+/*font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;*/
   font-weight:200;
 
 font-size:40px;
@@ -539,10 +524,7 @@ line-height:44px;
 
 }
 
-.postwrapper {
-  margin-bottom:0px;
-  padding-bottom: 0px;
-}
+
 
 div.realpost { margin-bottom: 0px; }
 
@@ -562,19 +544,38 @@ div.realpost { margin-bottom: 0px; }
   display:none;
   
 }
+/*--- Filters and Links -------*/
 
 #nav{
-        position:fixed;
+        position:relative;
         margin:0px;
-        margin-top: 160px;
+        margin-top: 57px;
+        width:140px;
+        float:left;
+
         overflow: auto;
+        font-family:'HelveticaNeueW01-75Bold';
+        font-size:15px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
 
-        font-weight:bold;
     }
 
-  ul #filters {
-      -webkit-margin-after: 0em;
-      -webkit-margin-before: 0em;
-      list-style-type: none;
+  #filters {      
+      padding-left: 10px;
+      padding-top:2px;
+      padding-bottom:7px;
+
     }
 
+
+#links {
+
+}
+
+
+ul li {
+  line-height: 0px;
+}
+
+#
