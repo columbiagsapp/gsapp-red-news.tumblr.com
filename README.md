@@ -25,8 +25,9 @@ Filters
 * Alumni Profiles
 * Class of 2014
 * CURE
-* Interdisciplinary
 * Guest Speakers
+* Interdisciplinary
+* Interviews
 
 Local Static Pages
 
