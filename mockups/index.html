@@ -12,7 +12,7 @@
     <meta name="if:Use multi column layout" content="0"/> 
     <meta name="text:Studio Title" content="" />
 
-    <link type="text/css" rel="stylesheet" media="all" href="http://www.columbia.edu/cu/arch/tumblr/css/gsapp_minimal.css">
+    <link type="text/css" rel="stylesheet" media="all" href="http://scratch.postfog.org/style.css">
 
     <style>
     /* Styling based on Tumblr customizable inputs */
@@ -60,6 +60,12 @@
     }
     {/block:IfDisqusShortname}
     
+    div#cusom-buttom {
+        margin:0;
+        width: 16px;
+        height: 16px;
+    }
+    
     {CustomCSS}
     </style> 
     
@@ -71,43 +77,97 @@
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/truncator.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.infinitescroll.min.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkshared.js"></script>
-	
-	{block:IfUseMultiColumnLayout}
-	<script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkmulticolumn.js"></script>
+    <script type="text/javascript" src="http://scratch.postfog.org/REDN_script.js"></script>
+    
+    <!-- fonts -->
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/418a3e8f-1014-4f94-a3ef-a03449ec5085.js"></script>
+    
+    
+    <!-- /fonts -->
+    
+    {block:IfUseMultiColumnLayout}
+    <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkmulticolumn.js"></script>
 	{/block:IfUseMultiColumnLayout}
 
 	{block:IfNotUseMultiColumnLayout}
 	<script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworklist.js"></script>
 	{/block:IfNotUseMultiColumnLayout}
 
+
+
+
   </head> 
   
 
+
+<!-------------------------------------->
+
   <body{block:PermalinkPage} class="permalink-page"{/block:PermalinkPage}> 
-  
+  <div id="topmask"></div>
+  <div id="blogrollmask"></div>
+  <div id="headerfademask"></div>
+  <div id="wrapper">
 	<div id="header">
 	  	<div class="clearfix">
-			<a id="logo" href="/"><img src="http://www.columbia.edu/cu/arch/tumblr/gsapp_logo.png"></a>
-			<div id="headertitle-container">
-				<a class="headertitle" href="/"><h1>{Description}</h1></a>
-				<a class="headertitle" href="/"><h1>{text:Studio Title}<h1></a>
+			
+            <a id="logo" href="#">
+            <img src="http://scratch.postfog.org/title.png"></a>
+            
+            <a href="http://www.columbia.edu/"><img id="CU_logo"src="http://scratch.postfog.org/columbia_logo.png"></a>
+                
 			</div>
 		</div>
-	</div> 
-
-  <div id="wrapper">  
+	
+<div id="main">
+    
 	    
     <div id="nav">
         
         <!-- Automatically Show Tumblr Pages, Ask & Submissions-->
         
-        {block:HasPages}
+        <!--   Tumblr Defaults>
+        >{block:HasPages}
         {block:Pages}<div class="headlink ajaxpage"><h2><a href="{URL}">{Label}</a></h2></div>{/block:Pages}
         {/block:HasPages}
         <div class="headlink"><h2><a href="/archive">Archive</a></h2></div>
         <div class="headlink"><h2><a href="/rss">RSS</a></h2></div>
-        <div class="headlink"><h2><a target="_blank" href="http://www.columbia.edu/cu/arch/tumblr/files/fa2013/FA13_00Handout_Syllabus_130825.pdf">Syllabus</a></h2></div>
+        -->
     
+   <ul id="internallinks">
+   <li><a href="http://gsapp-red-scratch.tumblr.com/">News</a></li>
+    
+    <li><ul id="filters">
+        <li><a href="http://gsapp-red-scratch.tumblr.com/">All</a></li>
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni">Alumni</a></li>
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/class2014">Class of 2014</a></li>
+
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/cure">Cure</a></li>
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/interdisciplinary">Interdisciplinary</a></li>
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/guestspeakers">Guest Speakers</a></li>
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/durst">Durst</a></li>
+        
+        </ul></li>
+    
+    
+    <li><a href="http://gsapp-red-scratch.tumblr.com/">About</a></li>
+    <li><a href="http://gsapp-red-scratch.tumblr.com/">Current Students</a></li>
+    <li><a href="http://gsapp-red-scratch.tumblr.com/test">Alumni Newsletter</a></li>
+    
+    
+    <div id="external_links">
+    
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">CURE</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">MSRED PROGRAM</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">RED EVENTS</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">GSAPP ALUMNI</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">CURE RESEARCH</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">LINKEDIN</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">FACEBOOK</a>
+    <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">TWITTER</a>
+    
+    
+    
+    </div><!-- /#external_links -->
   	</div><!-- /#nav -->
 
   	<div id="ajax"></div><!-- /#ajax -->
@@ -115,8 +175,12 @@
   
   
   
+  
+  
+  
+  
     
-  <div id="main">
+  
     {block:SearchPage}
     <div class="post search">
     <span class="permalink">{lang:Search}</span>
@@ -134,7 +198,7 @@
     
     
     
-
+<div id="blogroll">
 <div class = "autopagerize_page_element{block:IfUseMultiColumnLayout}{block:IndexPage} brickwall{/block:IndexPage}{/block:IfUseMultiColumnLayout}" >
 
 
@@ -243,17 +307,24 @@
 		{block:Photo}
 		<div class="post photo">
 		  <div class="realpost">
+          
+              <div class="date_type">
+                <div class="date">{block:Date}{DayOfMonth}, {Month}{/block:Date} </div>
+                        
+                <div class="type">{PostType} </div>
+              </div>
+          
 		  	{block:Permalink}
-		  		<img src="{PhotoURL-HighRes}" width="700" alt="{PhotoAlt}"/>
+		  		<img src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/>
 		  	{/block:Permalink}
 
 		  	{block:IndexPage} 
 				{LinkOpenTag}
 					{block:IfUseMultiColumnLayout}
-						<img src="{PhotoURL-250}" width="250" alt="{PhotoAlt}"/>
+						<img  src="{PhotoURL-250}" width="250" alt="{PhotoAlt}"/>
 					{/block:IfUseMultiColumnLayout}
 					{block:IfNotUseMultiColumnLayout}
-						<img src="{PhotoURL-HighRes}" width="700" alt="{PhotoAlt}"/>
+						<a href="{Permalink}"><img id="photo_index" src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/></a>
 					{/block:IfNotUseMultiColumnLayout}
 				{LinkCloseTag}
 			{/block:IndexPage} 
@@ -273,18 +344,51 @@
 		
 		
 		
+        
+        
+        
+        
+        
+        
+        
 		
 		{block:Text}
 		<div class="post text">
 		  <div class="realpost">
-			{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-			<div class="text-body">{Body}</div>
+            <div class="date_type">
+                <div class="date">
+                    {block:Date}{DayOfMonth}, {Month}{/block:Date} </div>
+                    
+                <div class="type">{PostType} </div>
+          </div>
+			{block:Title}<p class="text-title">{Title}<!--a href="{Permalink}"></a--></p>{/block:Title}
+			<div class="text-body">{Body} <br> <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1" style="background-image:url('http://s24.postimg.org/dv68yp7dt/FB_blue.gif');"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4" style="display: none;"></a>
+<a class="addthis_button_compact" style="display: none;"></a>
+<a class="addthis_counter addthis_bubble_style style="display: none;"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f2088e20e765fc7"></script>
+<!-- AddThis Button END --></div>
 		  </div>
+          
 		</div>{/block:Text}
 		
 		
 		
 		
+        
+        
+        
+        
+        
+        
+        
+        
 	{block:Date}
 	<div class="sidebar">
 		{block:Caption}<div class="caption"><div class="caption-text">{Caption}</div></div>{/block:Caption}
@@ -292,9 +396,9 @@
 	<div class="permalink">
 		<div class="tags">      
 		  
-	 {block:HasTags}Tags:
+	 {block:HasTags}-----
 	  {block:Tags}
-		<a class="{Tag}" href="{TagURL}">• {Tag}</a>&nbsp;
+		<a class="{Tag}" href="{TagURL}">{Tag}</a>&nbsp;
 	  {/block:Tags}<br />
 	 {/block:HasTags}
 	  </div>
@@ -325,7 +429,7 @@
 			 
 	</div><!-- /.postwrapper --> 
     {/block:Posts}
-    
+    </div><!-- /blogroll--->
    	
    	</div><!-- /.brickwall -->
 
@@ -334,7 +438,30 @@
     
     
     
- 
+    
+    
+    
+ <!-- 
+    {block:IndexPage}
+    {block:Pagination}
+      <div id="pager">
+      {block:NextPage}<a href="{NextPage}" id="past">&laquo; {lang:Older}</a>{/block:NextPage}
+      {block:PreviousPage}<a href="{PreviousPage}" id="future">{lang:Newer} &raquo;</a>{/block:PreviousPage}
+    </div>
+    {/block:Pagination}
+    {/block:IndexPage}
+    
+    
+    <div id="foot"> 
+    <ul id="bottom">
+      <li><a href="http://arch.columbia.edu">GSAPP</a></li> 
+
+    </ul> 
+    <form action="/search" method="get"> 
+    <input type="text" name="q" value="{lang:Search}" onclick="javascript:if (this.value == '{lang:Search}') this.value = '';"/> 
+    </form> 
+    </div>
+-->    
 
   
   {block:IfDisqusShortname}

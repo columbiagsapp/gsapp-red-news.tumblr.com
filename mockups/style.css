@@ -75,6 +75,7 @@ body {
       border:none;
     }
     /* 858585 */
+
     a img { 
     outline: 0; 
     border: none; 
@@ -244,22 +245,6 @@ html[xmlns] .clearfix {
 	}
 	
     
-    .north-america a:hover{color: #00D6FF !important}
-    .latin-america a:hover{color: #00E652 !important}
-    .south-asia a:hover{color: #FF9E00 !important}
-    .middle-east a:hover{color: #FF00A6 !important}
-    .africa a:hover{color: #008AFF !important}
-    .europe a:hover{color: #AD20FF !important}
-    .asia a:hover{color: #FF555A !important}
-    
-    .north-america-active a {color: #00D6FF !important; border-bottom: none !important;}
-    .latin-america-active a {color: #00E652 !important; border-bottom: none !important;}
-    .south-asia-active a {color: #FF9E00 !important; border-bottom: none !important;}
-    .middle-east-active a {color: #FF00A6 !important; border-bottom: none !important;}
-    .africa-active a {color: #008AFF !important; border-bottom: none !important;}
-    .europe-active a {color: #AD20FF !important; border-bottom: none !important;}
-    .asia-active a {color: #FF555A !important; border-bottom: none !important;}
-    .global-active a {color: black !important; border-bottom: none !important;}
     
     /* Tag Colors */
     
@@ -472,6 +457,13 @@ html[xmlns] .clearfix {
   
 }
 
+#blogroll {
+  position: relative;
+  margin-top: 0px;
+
+  /*overflow: hidden;*/
+}
+
 /*--- Post General --------*/
 
 .postwrapper {
@@ -534,8 +526,10 @@ div.realpost { margin-bottom: 0px; }
 }
 
 #CU_logo {
-  position:relative;
+  position:fixed;
   margin-left:630px;
+  top:30px;
+  z-index: 250;
   
 }
 
@@ -543,6 +537,7 @@ div.realpost { margin-bottom: 0px; }
   display:none;
   
 }
+
 /*--- Filters and Links -------*/
 
 #nav{
@@ -555,6 +550,7 @@ div.realpost { margin-bottom: 0px; }
         font-size:15px;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
+        z-index: 500;
 
     }
 
@@ -565,8 +561,23 @@ div.realpost { margin-bottom: 0px; }
 
     }
 
+#external_links{
+  border-top: 1px solid #000;
+  width:100%;
+  margin-top:40px;
+  padding-top:10px;
+}
 
-#links {
+
+
+.external_link {
+  font-family:'HelveticaNeueW01-55Roma';
+  border:1px solid black;
+  padding:2px;
+  margin-top:3px;
+  font-size: 9px;
+  white-space: nowrap;
+  z-index: 500;
 
 }
 
@@ -577,4 +588,38 @@ ul li {
 
 .photo img{
   margin-top:45px;
+}
+
+
+/* ----- MASKS ----------------------*/
+
+#topmask {
+  position: fixed;
+  height:28px;
+  width:100%;
+  background:white;
+  z-index: 1000;
+}
+
+#blogrollmask {
+  position: fixed;
+  height:144px;
+  width:100%;
+  background:white;
+  z-index: 50;
+}
+
+#headerfademask {
+  position: absolute;
+  height:176px;
+  width:500px;
+  background:white;
+  z-index: 200;
+  opacity:0;
+
+}
+
+.text-title {
+cursor: pointer;
+
 }

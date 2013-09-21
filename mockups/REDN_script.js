@@ -2,43 +2,30 @@ $(document).ready( function() {
 console.log("REDN Loaded");
 
 $(window).scroll(function(){
-				var scrollTop1 = 30;
-				var scrollTop2 = 180;
-
+				var scrollTop = 150;
 
 				var scrolled = $(window).scrollTop();
-					console.log(scrolled);
 
-				if(scrolled >= scrollTop1){
-					$('#CU_logo').css({position: 'fixed',  'top':'0%'})
-
-				}
-
-				if(scrolled <= scrollTop1){
-					$('#CU_logo').css({position: 'relative',  'top':'0%'})
-				}
-
-
-				if(scrolled >= scrollTop2){	
-					$('#logo').css({position: 'fixed', top: '-150px'})
-					$('#nav').css({position: 'fixed', top: '114px'})
+				if(scrolled >= scrollTop){	
+					$('#logo').css({position: 'fixed', top: '-120px'})
+					$('#nav').css({position: 'fixed', top: '144px'})
 					//$('#blogroll').css({position: 'relative', 'margin-top': '260px'})
 
 
-
 					}
-				if(scrolled < scrollTop2){	
+				if(scrolled < scrollTop){	
 					$('#logo').css({position: 'relative', top: '0px'})
 					$('#nav').css({position: 'relative', top: '0px'})
 					$('#blogroll').css({position: 'relative', 'margin-top': '0px'})
 
 
+
 				}
-				
-				//move exumas
-				/*var exumasTop = 100;
-				if (scrolled >= exumasTop){	$('.header h2 img').css({ position: 'fixed', top : '20px',}) }
-				if (scrolled < exumasTop){	$('.header h2 img').removeAttr('style'); }*/
+
+				var opacityfactor = scrolled/120;
+				console.log(opacityfactor);
+				$("#headerfademask").css({'opacity': opacityfactor});
+
 				});
 
 
@@ -64,7 +51,6 @@ else if (  $(this).children("div.text-body").css("display") === "none"  )
 
 	
 
-	console.log('Realpost end.');
 });
 
 
