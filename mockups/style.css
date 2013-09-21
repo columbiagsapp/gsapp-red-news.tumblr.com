@@ -55,7 +55,7 @@ body {
     img {
     	display: block; 
     	margin-bottom: 20px; 
-    	margin-top: 5px; 
+    	margin-top: 0px; 
     	}
     	
     a { color: #0b0c0c; 
@@ -575,4 +575,6 @@ ul li {
   line-height: 0px;
 }
 
-#
+.photo img{
+  margin-top:45px;
+}
