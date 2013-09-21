@@ -590,6 +590,12 @@ ul li {
   margin-top:45px;
 }
 
+.video iframe{
+  width:440px;
+  margin:0px;
+}
+
+
 
 /* ----- MASKS ----------------------*/
 
