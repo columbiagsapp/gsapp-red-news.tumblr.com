@@ -22,11 +22,12 @@ Filters
 
 * All
 * Alumni
-* Class of 2014 (or Student Profiles)
+* Alumni Profiles
+* Class of 2014
 * CURE
-* Interdisciplinary
 * Guest Speakers
-* Durst
+* Interdisciplinary
+* Interviews
 
 Local Static Pages
 
@@ -34,7 +35,7 @@ Local Static Pages
 * Current Students
 * Alumni Newsletters
 
-External Links
+External Links (To be determined in full shortly)
 
 * [CURE] (http://www.arch.columbia.edu/centers/cure-center-urban-real-estate)
 * [MSRED Program](http://www.arch.columbia.edu/programs/real-estate-development)
