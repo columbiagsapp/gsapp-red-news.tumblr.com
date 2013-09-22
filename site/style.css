@@ -68,12 +68,6 @@ body {
     border-bottom: 1px solid;
     }
 
-    a.read-more{
-      border-bottom:1px solid;
-    }
-    a.read-more:hover{
-      border:none;
-    }
     /* 858585 */
 
     a img { 
@@ -364,7 +358,7 @@ html[xmlns] .clearfix {
     .permalink-page .link embed,
     .permalink-page .link iframe,
     .permalink-page link object {
-      width: 700px;
+      /*width: 700px;*/
     }
 
     .text img,
@@ -479,7 +473,7 @@ html[xmlns] .clearfix {
 
 /*--- Post Header  --------*/
 
-.date_type {
+.date_type, .read-more {
   font-size: 12px;
   color:#007eff;
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
