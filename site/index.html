@@ -74,7 +74,6 @@
         <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.masonry.min.js"></script>
     {/block:IfUseMultiColumnLayout}
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/arrow_top.js"></script>
-    <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/truncator.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.infinitescroll.min.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkshared.js"></script>
     <script type="text/javascript" src="http://scratch.postfog.org/REDN_script.js"></script>
@@ -110,10 +109,11 @@
 	<div id="header">
 	  	<div class="clearfix">
 			
-            <a id="logo" href="#">
-            <img src="http://scratch.postfog.org/title.png"></a>
+            <a id="logo" href="/"><img src="http://scratch.postfog.org/title_GSAPP.png"></a>
             
             <a href="http://www.columbia.edu/"><img id="CU_logo"src="http://scratch.postfog.org/columbia_logo.png"></a>
+
+            <img id="badge" src="http://scratch.postfog.org/badge_mockup.png">
                 
 			</div>
 		</div>
@@ -134,11 +134,12 @@
         -->
     
    <ul id="internallinks">
-   <li><a href="http://gsapp-red-scratch.tumblr.com/">News</a></li>
+   <li>Filter News by</li>
     
     <li><ul id="filters">
         <li><a href="http://gsapp-red-scratch.tumblr.com/">All</a></li>
         <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni">Alumni</a></li>
+        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni-profile">Alumni Profiles</a></li>
         <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/class2014">Class of 2014</a></li>
 
         <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/cure">Cure</a></li>
@@ -149,12 +150,15 @@
         </ul></li>
     
     
-    <li><a href="http://gsapp-red-scratch.tumblr.com/">About</a></li>
-    <li><a href="http://gsapp-red-scratch.tumblr.com/">Current Students</a></li>
-    <li><a href="http://gsapp-red-scratch.tumblr.com/test">Alumni Newsletter</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/currentstudents">Current Students</a></li>
+    <li><a href="/alumninewsletter">Alumni Newsletter</a></li>
     
     
     <div id="external_links">
+      <div>Other Resources</div>
+      <br><br>
+
     
     <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">CURE</a>
     <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">MSRED PROGRAM</a>
@@ -199,221 +203,191 @@
     
     
 <div id="blogroll">
-<div class = "autopagerize_page_element{block:IfUseMultiColumnLayout}{block:IndexPage} brickwall{/block:IndexPage}{/block:IfUseMultiColumnLayout}" >
+<div class="autopagerize_page_element{block:IfUseMultiColumnLayout}{block:IndexPage} brickwall{/block:IndexPage}{/block:IfUseMultiColumnLayout}">
 
-
-
-    {block:Posts}
+  {block:Posts}
 	<div class="postwrapper">
 
 		<a href='{Permalink}' class="hidden-permalink">{lang:Read More}</a>
-		
-		
-		
-		{block:Link}
-		<div class="post link">
-		  <div class="realpost">
-		  <h2><a href="{URL}">{Name}</a></h2> 
-		  {block:Description}{Description}{/block:Description}
-		  </div>
-		</div>
-		{/block:Link}
-		
-		
-		
-		
-		{block:Answer}
-		<div class="post answer">
-		  <div class="realpost">
-		  <div class="question">{lang:Asker asked}: {Question}</div>
-		  {Answer}
-		  </div>
-		</div>
-		{/block:Answer}
-		
-		
-	
-		
-		{block:Chat}
-		<div class="post chat">
-		  <div class="realpost">
-			{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-			<ol>
-			  {block:Lines}
-			  <li>{block:Label}<span class="label">{Label}</span>{/block:Label}
-			  {Line}</li>
-			  {/block:Lines}
-			</ol>
-		  </div>
-		</div>
-		{/block:Chat}
-		
-		
-		
-		
-		{block:Video}
-		<div class="post video">
-		  <div class="realpost">
-		  <div class="embed-container">
-		  {Video-500}
-		  </div>
-		  </div>
-		</div>
-		{/block:Video}
-		
-	
-	
-	   {block:Photoset}
-		<div class="post photoset">
-			<div class="realpost">
+		<div class="post">
 
-				{block:Permalink}
-					{block:Photos}
-						<img src="{PhotoURL-HighRes}" width="700" alt="{PhotoAlt}"/>
-					{/block:Photos}
-				{/block:Permalink}
-				{block:IndexPage} 
-					{block:IfUseMultiColumnLayout}
-						{Photoset-250}
-					{/block:IfUseMultiColumnLayout}
-					{block:IfNotUseMultiColumnLayout}
-						{Photoset-700}
-					{/block:IfNotUseMultiColumnLayout}
-				{/block:IndexPage} 
-			</div>	
-		</div>
-		{/block:Photoset}    
-		
-		
-		
-		
-		
-		{block:Audio}
-		<div class="post audio">
-		  <div class="realpost">
-		  
-		  {block:AlbumArt}
-		  <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" class="album-art" />	
-	{/block:AlbumArt}
-		  {AudioPlayerBlack}
-		  {block:Caption}{Caption}{/block:Caption}
-		  </div>
-		</div>
-		{/block:Audio}
-		
-		
-		
-		
-		{block:Photo}
-		<div class="post photo">
-		  <div class="realpost">
+      {block:Date}
+        <div class="date_type">
+          <div class="date">{block:Date}{DayOfMonth} {Month}, {Year}{/block:Date}</div>
           
-              <div class="date_type">
-                <div class="date">{block:Date}{DayOfMonth}, {Month}{/block:Date} </div>
-                        
-                <div class="type">{PostType} </div>
+          {block:HasTags} 
+            <ul class="type">
+            {block:Tags}
+              <li class="type-tag">{Tag}</li>
+            {/block:Tags}
+            </ul>
+          {/block:HasTags}
+
+        </div>
+      {/block:Date}
+
+
+      {block:Text}
+      <div class="text">
+
+          {block:Title}<a href="{Permalink}" class="text-title">{Title}</a>{/block:Title}
+          <div class="text-body">
+            {Body}
+            <br>
+
+            {block:PermalinkPage}
+              <div class="addthis_toolbox addthis_default_style ">
+                <a class="addthis_button_preferred_1" style="background-image:url('http://s24.postimg.org/dv68yp7dt/FB_blue.gif');"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4" style="display: none;"></a>
+                <a class="addthis_button_compact" style="display: none;"></a>
+                <a class="addthis_counter addthis_bubble_style" style="display: none;"></a>
               </div>
-          
-		  	{block:Permalink}
-		  		<img src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/>
-		  	{/block:Permalink}
+            {/block:PermalinkPage}
 
-		  	{block:IndexPage} 
-				{LinkOpenTag}
-					{block:IfUseMultiColumnLayout}
-						<img  src="{PhotoURL-250}" width="250" alt="{PhotoAlt}"/>
-					{/block:IfUseMultiColumnLayout}
-					{block:IfNotUseMultiColumnLayout}
-						<a href="{Permalink}"><img id="photo_index" src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/></a>
-					{/block:IfNotUseMultiColumnLayout}
-				{LinkCloseTag}
-			{/block:IndexPage} 
-		  </div>
-		</div>{/block:Photo}
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f2088e20e765fc7"></script>
+          </div><!--/.body-->  
+      </div><!--/.text-->
+      {/block:Text}
 		
-		
-		
-		
-		{block:Quote}
-		<div class="post quote">
-		  <div class="realpost">
-			<blockquote class="thequote">{Quote}</blockquote>
-			{block:Source}{Source}{/block:Source}
-		  </div>
-		</div>{/block:Quote}
-		
-		
-		
-        
-        
-        
-        
-        
-        
-        
-		
-		{block:Text}
-		<div class="post text">
-		  <div class="realpost">
-            <div class="date_type">
-                <div class="date">
-                    {block:Date}{DayOfMonth}, {Month}{/block:Date} </div>
-                    
-                <div class="type">{PostType} </div>
-          </div>
-			{block:Title}<p class="text-title">{Title}<!--a href="{Permalink}"></a--></p>{/block:Title}
-			<div class="text-body">{Body} <br> <!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style ">
-<a class="addthis_button_preferred_1" style="background-image:url('http://s24.postimg.org/dv68yp7dt/FB_blue.gif');"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4" style="display: none;"></a>
-<a class="addthis_button_compact" style="display: none;"></a>
-<a class="addthis_counter addthis_bubble_style style="display: none;"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f2088e20e765fc7"></script>
-<!-- AddThis Button END --></div>
-		  </div>
-          
-		</div>{/block:Text}
-		
-		
-		
-		
-        
-        
-        
-        
-        
-        
-        
-        
-	{block:Date}
-	<div class="sidebar">
-		{block:Caption}<div class="caption"><div class="caption-text">{Caption}</div></div>{/block:Caption}
-		
-	<div class="permalink">
-		<div class="tags">      
-		  
-	 {block:HasTags}-----
-	  {block:Tags}
-		<a class="{Tag}" href="{TagURL}">{Tag}</a>&nbsp;
-	  {/block:Tags}<br />
-	 {/block:HasTags}
-	  </div>
-			
-	  <a href="{ReblogURL}">&#8634;  Reblog</a>
-	  {block:PostNotes}{PostNotes}{/block:PostNotes}
 
 
-	<br />  
-		  </div>
-		</div>  
-		 {/block:Date}
+  		{block:Link}
+  		<div class="link">
+  		    <h2><a href="{URL}">{Name}</a></h2> 
+  		    {block:Description}{Description}{/block:Description}
+  		</div><!--/.link-->
+  		{/block:Link}
+  		
+  		
+  		{block:Answer}
+  		<div class="answer">
+  		  <div class="question">{lang:Asker asked}: {Question}</div>
+  		  {Answer}
+  		</div><!--/.answer-->
+  		{/block:Answer}
+  		
+  		
+  	
+  		
+  		{block:Chat}
+  		<div class="chat">
+  			{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+  			<ol>
+  			  {block:Lines}
+  			  <li>{block:Label}<span class="label">{Label}</span>{/block:Label}
+  			  {Line}</li>
+  			  {/block:Lines}
+  			</ol>
+  		</div><!--/.chat-->
+  		{/block:Chat}
+  		
+  		
+  		
+  		
+  		{block:Video}
+  		<div class="video">
+    		  <div class="embed-container">
+    		    {Video-500}
+    		  </div><!--/.embed-container-->
+  		</div><!--/.video-->
+  		{/block:Video}
+  		
+  	
+  	
+      {block:Photoset}
+  		<div class="photoset">
+
+  				{block:Permalink}
+  					{block:Photos}
+  						<img src="{PhotoURL-HighRes}" width="700" alt="{PhotoAlt}"/>
+  					{/block:Photos}
+  				{/block:Permalink}
+  				{block:IndexPage} 
+  					{block:IfUseMultiColumnLayout}
+  						{Photoset-250}
+  					{/block:IfUseMultiColumnLayout}
+  					{block:IfNotUseMultiColumnLayout}
+  						{Photoset-700}
+  					{/block:IfNotUseMultiColumnLayout}
+  				{/block:IndexPage}
+  		</div><!--/.photoset-->
+  		{/block:Photoset}    
+  		
+  		
+  		
+  		
+  		
+  		{block:Audio}
+  		<div class="audio">
+  		  
+  		  {block:AlbumArt}
+  		    <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" class="album-art" />	
+        {/block:AlbumArt}
+  		  {AudioPlayerBlack}
+  		  {block:Caption}{Caption}{/block:Caption}
+  		</div><!--/.audio-->
+  		{/block:Audio}
+  		
+  		
+  		
+  		
+  		{block:Photo}
+  		<div class="photo">
+  		  	{block:Permalink}
+  		  		<img src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/>
+  		  	{/block:Permalink}
+
+  		  	{block:IndexPage} 
+  				{LinkOpenTag}
+  					{block:IfUseMultiColumnLayout}
+  						<img  src="{PhotoURL-250}" width="250" alt="{PhotoAlt}"/>
+  					{/block:IfUseMultiColumnLayout}
+  					{block:IfNotUseMultiColumnLayout}
+  						<a href="{Permalink}"><img id="photo_index" src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/></a>
+  					{/block:IfNotUseMultiColumnLayout}
+  				{LinkCloseTag}
+  			{/block:IndexPage}
+  		</div><!--/.photo-->
+      {/block:Photo}
+  		
+  		
+  		
+  		
+  		{block:Quote}
+  		<div class="quote">
+  		    <blockquote class="thequote">{Quote}</blockquote>
+  		    {block:Source}{Source}{/block:Source}
+  		</div><!--/.quote-->
+      {/block:Quote}
+  		
+  		{block:Caption}
+      <div class="caption">
+        <div class="caption-text">{Caption}</div>
+      </div><!--/.caption-->
+      {/block:Caption}
 
 
+      
+      {block:HasTags}
+      <div class="tags">&mdash;
+        {block:Tags}
+          <a class="{Tag}" href="{TagURL}">{Tag}</a>&nbsp;
+        {/block:Tags}
+        <br />
+      </div><!--/.tags-->
+      {/block:HasTags}
+    
+      <a href="{ReblogURL}">&#8634;  Reblog</a>
+      <br />  
+  		
 
+		</div><!-- /.post -->
+        
+
+<!--
 		 {block:IfDisqusShortname}
       {block:Permalink}
       <div id="disqus_thread">
@@ -423,15 +397,16 @@
       </div>
       {/block:Permalink}
     {/block:IfDisqusShortname}
+  -->
     
     
 			 
 			 
-	</div><!-- /.postwrapper --> 
-    {/block:Posts}
-    </div><!-- /blogroll--->
+  </div><!-- /.postwrapper --> 
+  {/block:Posts}
+</div><!--/.autopagerize_page_element-->
+</div><!-- /blogroll--->
    	
-   	</div><!-- /.brickwall -->
 
 
 
