@@ -550,9 +550,11 @@ div.realpost { margin-bottom: 0px; }
 
   #filters {      
     display:inline;
-      padding-left: 0px;
-      padding-top:2px;
-      padding-bottom:7px;
+    padding-left: 0px;
+    padding-top:2px;
+    padding-bottom:7px;
+ 
+
 
     }
 
