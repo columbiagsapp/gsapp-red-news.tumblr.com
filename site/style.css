@@ -457,6 +457,12 @@ html[xmlns] .clearfix {
   
 }
 
+#badge {
+  position:fixed;
+  margin-left:630px;
+  margin-top:40px;
+}
+
 #blogroll {
   position: relative;
   margin-top: 0px;
@@ -534,7 +540,7 @@ div.realpost { margin-bottom: 0px; }
 }
 
 .text-body {
-  display:none;
+  display:block;
   
 }
 
@@ -564,7 +570,9 @@ div.realpost { margin-bottom: 0px; }
 #external_links{
   border-top: 1px solid #000;
   width:100%;
-  margin-top:40px;
+  margin-top:50px;
+  padding-top:10px;
+  padding-bottom:15px;
   padding-top:10px;
 }
 
@@ -574,13 +582,18 @@ div.realpost { margin-bottom: 0px; }
   font-family:'HelveticaNeueW01-55Roma';
   border:1px solid black;
   padding:2px;
-  margin-top:3px;
+  margin-top:4px;
   font-size: 9px;
   white-space: nowrap;
   z-index: 500;
 
+
 }
 
+div#external_links a:hover {
+  background-color: #0038a8;
+  color:#ffffff;
+}
 
 ul li {
   line-height: 0px;
@@ -617,7 +630,7 @@ ul li {
 
 #headerfademask {
   position: absolute;
-  height:176px;
+  height:146px;
   width:500px;
   background:white;
   z-index: 200;
