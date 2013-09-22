@@ -34,51 +34,6 @@ $(window).scroll(function(){
 
 // EXPAND TEXT FOR POST -------------------
 console.log(document.URL);
-if ( document.URL === "http://gsapp-red-scratch.tumblr.com/" ) 
-{
-	console.log('text-body hidden');
-	//$(".text-body").css("display",'none');
-	$(".text-body p").each(function(i){
-		if(i > 1){
-			$(this).css('display', 'none');
-		}else{
-			var str = $(this).text();
-			
-			$(this).html( _(str).prune(100) );
-		}
-	});
-	
-}
-else
-{
-	$(".text-body").css("display",'block');
-}
-
-
-	$('.realpost').click(function(){
-		console.log('Realpost clicked.');
-
-		//console.log($(this).children("p.text-body").css("display"));
-
-		if (  $(this).children("div.text-body").css("display") === "block"  )
-		{
-				$(this).children("div.text-body").css("display","none");
-
-			}
-
-		else if (  $(this).children("div.text-body").css("display") === "none"  )
-			
-			{
-				$(this).children("div.text-body").css("display","block");
-
-
-			}
-		
-
-		});
-
-
-
 
 
 
