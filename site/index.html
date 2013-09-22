@@ -3,7 +3,7 @@
  
 <html xmlns="http://www.w3.org/1999/xhtml"> 
   <head> 
-    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="shortcut icon" href="http://scratch.postfog.org/favicon.gif" />
     {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
     <title>{Title}{block:SearchPage}: {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
     <!-- Default values -->
@@ -73,24 +73,22 @@
     {block:IfUseMultiColumnLayout}
         <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.masonry.min.js"></script>
     {/block:IfUseMultiColumnLayout}
-    <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/arrow_top.js"></script>
+    <!--script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/arrow_top.js"></script-->
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.infinitescroll.min.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkshared.js"></script>
     <script type="text/javascript" src="http://scratch.postfog.org/REDN_script.js"></script>
     
     <!-- fonts -->
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/418a3e8f-1014-4f94-a3ef-a03449ec5085.js"></script>
-    
-    
+<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/418a3e8f-1014-4f94-a3ef-a03449ec5085.css"/>
     <!-- /fonts -->
     
     {block:IfUseMultiColumnLayout}
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkmulticolumn.js"></script>
     {/block:IfUseMultiColumnLayout}
 
-	{block:IfNotUseMultiColumnLayout}
-	<script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworklist.js"></script>
-	{/block:IfNotUseMultiColumnLayout}
+    {block:IfNotUseMultiColumnLayout}
+  <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworklist.js"></script>
+  {/block:IfNotUseMultiColumnLayout}
 
 
 
@@ -106,21 +104,21 @@
   <div id="blogrollmask"></div>
   <div id="headerfademask"></div>
   <div id="wrapper">
-	<div id="header">
-	  	<div class="clearfix">
-			
-            <a id="logo" href="/"><img src="http://scratch.postfog.org/title_GSAPP.png"></a>
+  <div id="header">
+      <div class="clearfix">
+      
+            <a id="logo" href="/"><img src="https://github.com/columbiagsapp/red-review/blob/master/site/img/title_GSAPP-02.png?raw=true"></a>
             
             <a href="http://www.columbia.edu/"><img id="CU_logo"src="http://scratch.postfog.org/columbia_logo.png"></a>
 
             <img id="badge" src="http://scratch.postfog.org/badge_mockup.png">
                 
-			</div>
-		</div>
-	
+      </div>
+    </div>
+  
 <div id="main">
     
-	    
+      
     <div id="nav">
         
         <!-- Automatically Show Tumblr Pages, Ask & Submissions-->
@@ -135,19 +133,26 @@
     
    <ul id="internallinks">
    <li>Filter News by</li>
-    
+    <br>
     <li><ul id="filters">
-        <li><a href="http://gsapp-red-scratch.tumblr.com/">All</a></li>
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni">Alumni</a></li>
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni-profile">Alumni Profiles</a></li>
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/class2014">Class of 2014</a></li>
+        <li><img id="filterall" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img><a href="http://gsapp-red-scratch.tumblr.com/">All</a></li>
+        <li><img id="filteralumni" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img>
+        <a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni">Alumni</a></li>
+        <li><img id="filteralumniprofile" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img>
+        <a href="http://gsapp-red-scratch.tumblr.com/tagged/alumni-profile">Alumni Profiles</a></li>
+        <li><img id="filterclass2014" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img>
+        <a href="http://gsapp-red-scratch.tumblr.com/tagged/class2014">Class of 2014</a></li>
 
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/cure">Cure</a></li>
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/interdisciplinary">Interdisciplinary</a></li>
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/guestspeakers">Guest Speakers</a></li>
-        <li><a href="http://gsapp-red-scratch.tumblr.com/tagged/durst">Durst</a></li>
+        <li><img id="filtercure" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img><a href="http://gsapp-red-scratch.tumblr.com/tagged/cure">Cure</a></li>
+        <li><img id="filterinterdis" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img>
+        <a href="http://gsapp-red-scratch.tumblr.com/tagged/interdisciplinary">Interdisciplinary</a></li>
+        <li><img id="filterguest" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img>
+        <a href="http://gsapp-red-scratch.tumblr.com/tagged/guestspeakers">Guest Speakers</a></li>
+        <li><img id="filterdurst" class="filter_select" src="http://scratch.postfog.org/filteroff.png"></img><a href="http://gsapp-red-scratch.tumblr.com/tagged/durst">Durst</a></li>
         
         </ul></li>
+        <br>
+        <br>
     
     
     <li><a href="/about">About</a></li>
@@ -157,7 +162,7 @@
     
     <div id="external_links">
       <div>Other Resources</div>
-      <br><br>
+      
 
     
     <a class="external_link" href="http://www.arch.columbia.edu/centers/cure-center-urban-real-estate">CURE</a>
@@ -172,9 +177,9 @@
     
     
     </div><!-- /#external_links -->
-  	</div><!-- /#nav -->
+    </div><!-- /#nav -->
 
-  	<div id="ajax"></div><!-- /#ajax -->
+    <div id="ajax"></div><!-- /#ajax -->
   
   
   
@@ -206,10 +211,10 @@
 <div class="autopagerize_page_element{block:IfUseMultiColumnLayout}{block:IndexPage} brickwall{/block:IndexPage}{/block:IfUseMultiColumnLayout}">
 
   {block:Posts}
-	<div class="postwrapper">
+  <div class="postwrapper">
 
-		<a href='{Permalink}' class="hidden-permalink">{lang:Read More}</a>
-		<div class="post">
+    <a href='{Permalink}' class="hidden-permalink">{lang:Read More}</a>
+    <div class="post">
 
       {block:Date}
         <div class="date_type">
@@ -251,119 +256,119 @@
           </div><!--/.body-->  
       </div><!--/.text-->
       {/block:Text}
-		
+    
 
 
-  		{block:Link}
-  		<div class="link">
-  		    <h2><a href="{URL}">{Name}</a></h2> 
-  		    {block:Description}{Description}{/block:Description}
-  		</div><!--/.link-->
-  		{/block:Link}
-  		
-  		
-  		{block:Answer}
-  		<div class="answer">
-  		  <div class="question">{lang:Asker asked}: {Question}</div>
-  		  {Answer}
-  		</div><!--/.answer-->
-  		{/block:Answer}
-  		
-  		
-  	
-  		
-  		{block:Chat}
-  		<div class="chat">
-  			{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-  			<ol>
-  			  {block:Lines}
-  			  <li>{block:Label}<span class="label">{Label}</span>{/block:Label}
-  			  {Line}</li>
-  			  {/block:Lines}
-  			</ol>
-  		</div><!--/.chat-->
-  		{/block:Chat}
-  		
-  		
-  		
-  		
-  		{block:Video}
-  		<div class="video">
-    		  <div class="embed-container">
-    		    {Video-500}
-    		  </div><!--/.embed-container-->
-  		</div><!--/.video-->
-  		{/block:Video}
-  		
-  	
-  	
+      {block:Link}
+      <div class="link">
+          <h2><a href="{URL}">{Name}</a></h2> 
+          {block:Description}{Description}{/block:Description}
+      </div><!--/.link-->
+      {/block:Link}
+      
+      
+      {block:Answer}
+      <div class="answer">
+        <div class="question">{lang:Asker asked}: {Question}</div>
+        {Answer}
+      </div><!--/.answer-->
+      {/block:Answer}
+      
+      
+    
+      
+      {block:Chat}
+      <div class="chat">
+        {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+        <ol>
+          {block:Lines}
+          <li>{block:Label}<span class="label">{Label}</span>{/block:Label}
+          {Line}</li>
+          {/block:Lines}
+        </ol>
+      </div><!--/.chat-->
+      {/block:Chat}
+      
+      
+      
+      
+      {block:Video}
+      <div class="video">
+          <div class="embed-container">
+            {Video-500}
+          </div><!--/.embed-container-->
+      </div><!--/.video-->
+      {/block:Video}
+      
+    
+    
       {block:Photoset}
-  		<div class="photoset">
+      <div class="photoset">
 
-  				{block:Permalink}
-  					{block:Photos}
-  						<img src="{PhotoURL-HighRes}" width="700" alt="{PhotoAlt}"/>
-  					{/block:Photos}
-  				{/block:Permalink}
-  				{block:IndexPage} 
-  					{block:IfUseMultiColumnLayout}
-  						{Photoset-250}
-  					{/block:IfUseMultiColumnLayout}
-  					{block:IfNotUseMultiColumnLayout}
-  						{Photoset-700}
-  					{/block:IfNotUseMultiColumnLayout}
-  				{/block:IndexPage}
-  		</div><!--/.photoset-->
-  		{/block:Photoset}    
-  		
-  		
-  		
-  		
-  		
-  		{block:Audio}
-  		<div class="audio">
-  		  
-  		  {block:AlbumArt}
-  		    <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" class="album-art" />	
+          {block:Permalink}
+            {block:Photos}
+              <img src="{PhotoURL-HighRes}" width="700" alt="{PhotoAlt}"/>
+            {/block:Photos}
+          {/block:Permalink}
+          {block:IndexPage} 
+            {block:IfUseMultiColumnLayout}
+              {Photoset-250}
+            {/block:IfUseMultiColumnLayout}
+            {block:IfNotUseMultiColumnLayout}
+              {Photoset-700}
+            {/block:IfNotUseMultiColumnLayout}
+          {/block:IndexPage}
+      </div><!--/.photoset-->
+      {/block:Photoset}    
+      
+      
+      
+      
+      
+      {block:Audio}
+      <div class="audio">
+        
+        {block:AlbumArt}
+          <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" class="album-art" />  
         {/block:AlbumArt}
-  		  {AudioPlayerBlack}
-  		  {block:Caption}{Caption}{/block:Caption}
-  		</div><!--/.audio-->
-  		{/block:Audio}
-  		
-  		
-  		
-  		
-  		{block:Photo}
-  		<div class="photo">
-  		  	{block:Permalink}
-  		  		<img src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/>
-  		  	{/block:Permalink}
+        {AudioPlayerBlack}
+        {block:Caption}{Caption}{/block:Caption}
+      </div><!--/.audio-->
+      {/block:Audio}
+      
+      
+      
+      
+      {block:Photo}
+      <div class="photo">
+          {block:Permalink}
+            <img src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/>
+          {/block:Permalink}
 
-  		  	{block:IndexPage} 
-  				{LinkOpenTag}
-  					{block:IfUseMultiColumnLayout}
-  						<img  src="{PhotoURL-250}" width="250" alt="{PhotoAlt}"/>
-  					{/block:IfUseMultiColumnLayout}
-  					{block:IfNotUseMultiColumnLayout}
-  						<a href="{Permalink}"><img id="photo_index" src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/></a>
-  					{/block:IfNotUseMultiColumnLayout}
-  				{LinkCloseTag}
-  			{/block:IndexPage}
-  		</div><!--/.photo-->
+          {block:IndexPage} 
+          {LinkOpenTag}
+            {block:IfUseMultiColumnLayout}
+              <img  src="{PhotoURL-250}" width="250" alt="{PhotoAlt}"/>
+            {/block:IfUseMultiColumnLayout}
+            {block:IfNotUseMultiColumnLayout}
+              <a href="{Permalink}"><img id="photo_index" src="{PhotoURL-HighRes}" width="440" alt="{PhotoAlt}"/></a>
+            {/block:IfNotUseMultiColumnLayout}
+          {LinkCloseTag}
+        {/block:IndexPage}
+      </div><!--/.photo-->
       {/block:Photo}
-  		
-  		
-  		
-  		
-  		{block:Quote}
-  		<div class="quote">
-  		    <blockquote class="thequote">{Quote}</blockquote>
-  		    {block:Source}{Source}{/block:Source}
-  		</div><!--/.quote-->
+      
+      
+      
+      
+      {block:Quote}
+      <div class="quote">
+          <blockquote class="thequote">{Quote}</blockquote>
+          {block:Source}{Source}{/block:Source}
+      </div><!--/.quote-->
       {/block:Quote}
-  		
-  		{block:Caption}
+      
+      {block:Caption}
       <div class="caption">
         <div class="caption-text">{Caption}</div>
       </div><!--/.caption-->
@@ -382,13 +387,13 @@
     
       <a href="{ReblogURL}">&#8634;  Reblog</a>
       <br />  
-  		
+      
 
-		</div><!-- /.post -->
+    </div><!-- /.post -->
         
 
 <!--
-		 {block:IfDisqusShortname}
+     {block:IfDisqusShortname}
       {block:Permalink}
       <div id="disqus_thread">
       <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
@@ -400,13 +405,13 @@
   -->
     
     
-			 
-			 
+       
+       
   </div><!-- /.postwrapper --> 
   {/block:Posts}
 </div><!--/.autopagerize_page_element-->
 </div><!-- /blogroll--->
-   	
+    
 
 
 
@@ -457,8 +462,8 @@
     {/block:IfDisqusShortname}
 
     {block:Pagination}
-    	{block:NextPage}<div id="page-nav"><a href="{NextPage}" target="_self">Next Page</a></div>{/block:NextPage}
-	{/block:Pagination}
-	</div><!-- /#main -->
+      {block:NextPage}<div id="page-nav"><a href="{NextPage}" target="_self">Next Page</a></div>{/block:NextPage}
+  {/block:Pagination}
+  </div><!-- /#main -->
   </body>
 </html>
