@@ -177,7 +177,7 @@ body {
 
     ul li{
       list-style-type: none !important;
-      margin: 20px 0;
+      margin: 0px 0;
 
     }
 
@@ -542,13 +542,15 @@ div.realpost { margin-bottom: 0px; }
         font-family:'HelveticaNeueW01-75Bold';
         font-size:15px;
         border-top: 1px solid #000;
-        border-bottom: 1px solid #000;
+        /*border-bottom: 1px solid #000;*/
+
         z-index: 500;
 
     }
 
   #filters {      
-      padding-left: 10px;
+    display:inline;
+      padding-left: 0px;
       padding-top:2px;
       padding-bottom:7px;
 
@@ -557,8 +559,7 @@ div.realpost { margin-bottom: 0px; }
 #external_links{
   border-top: 1px solid #000;
   width:100%;
-  margin-top:50px;
-  padding-top:10px;
+  margin-top:30px;
   padding-bottom:15px;
   padding-top:10px;
 }
@@ -583,7 +584,25 @@ div#external_links a:hover {
 }
 
 ul li {
-  line-height: 0px;
+padding-bottom:2px;
+}
+
+
+.filter_select {
+  position:relative;
+  display:inline;
+  float:left;
+  margin-top: 3px;
+  margin-bottom:2px;
+  margin-right:7px;
+  
+  /*width:8px;
+  height:8px;
+  font-size:8px;
+  background-color: white;
+  border:1px solid black;
+  padding-right:8px;
+  margin-bottom:2px;*/
 }
 
 .photo img{
@@ -628,4 +647,84 @@ ul li {
 .text-title {
 cursor: pointer;
 
+}
+
+/* ----- @kyong in browser css ---- */
+
+.line {
+        border-top:1px black solid;
+        width: 20px;
+        height: 1px;
+        margin-top: 2px;
+        display: inline
+    }
+
+.text-body {
+ font-weight: normal;
+line-height: 1.5em;
+}
+
+.tags {
+font-size: 12px;
+font-family: TimesNewRoman, "Times New Roman", Times,  Georgia, serif;
+      font-weight: normal !important;
+border:none;
+margin:0;
+}
+
+p .text-title {
+line-height: 1.0em;
+}
+
+.date_type {
+font-weight: normal;
+}
+
+.col {
+margin: 0 5px 0 0;
+width: 150px;
+float: left;
+position: relative;
+max-width: 140px;
+height: 100%;
+}
+
+.col img {
+width: 100%
+height: 100%;
+max-width: 100px;
+max-height: 125px;
+margin: 10px 0 5px 0;
+}
+
+#gsapp-logo {
+margin-top: 10px;
+padding-top:10px;
+overflow: hidden;
+border-top: 1px solid #000;
+}
+
+
+
+.tags {
+display: inline;
+font-size: 14px;
+font-color: 
+}
+
+.postwrapper {
+margin-left: 160px;
+}
+
+body {
+background-color: transparent;
+}
+.post:hover {
+/*background-color: black;*/
+}
+.text-body {
+margin: 15px 0;
+}
+#people {
+margin-left: 160px;
 }

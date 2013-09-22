@@ -36,7 +36,41 @@ $(window).scroll(function(){
 console.log(document.URL);
 
 
+// CHANGE SELECTED FILTER BOX **should be made dynamic**
 
+
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/") {
+	$('#filterall').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/alumni") {
+	$('#filteralumni').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/alumni-profile") {
+	$('#filteralumniprofile').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/class2014") {
+	$('#filterclass2014').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/cure") {
+	$('#filtercure').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/interdisciplinary") {
+	$('#filterinterdis').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/guest") {
+	$('#filterguest').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
+if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/durst") {
+	$('#filterdurst').attr("src", 'http://scratch.postfog.org/filteron.png');
+
+}
 
 
 
