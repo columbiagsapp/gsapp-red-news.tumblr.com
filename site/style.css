@@ -242,29 +242,7 @@ html[xmlns] .clearfix {
     
     /* Tag Colors */
     
- 
-	 .sidebar {
-    	float: left;
-    	width: 250px;
-      font: bold 13px/17px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      margin-bottom: 0px;
-      margin-top: 10px;
-    }
 
-    .brickwall .sidebar{
-      margin-bottom:60px;
-    }
-
-    .sidebar blockquote{
-      padding:0;
-      margin:0;
-    }
-
-    .sidebar .tumblr_blog{
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
     	
     .tags {
     	font-weight: bold
