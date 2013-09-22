@@ -630,7 +630,7 @@ ul li {
 
 #headerfademask {
   position: absolute;
-  height:146px;
+  height:176px;
   width:500px;
   background:white;
   z-index: 200;
