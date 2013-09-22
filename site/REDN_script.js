@@ -1,6 +1,8 @@
 $(document).ready( function() {
 console.log("REDN Loaded");
 
+
+
 // MOVE, FADE FEATURES FOR LOGO -------------
 
 $(window).scroll(function(){
@@ -27,7 +29,7 @@ $(window).scroll(function(){
 				var opacityfactor = scrolled/140;
 				$("#headerfademask").css({'opacity': opacityfactor});
 
-				});
+				});//end window scroll
 
 
 // EXPAND TEXT FOR POST -------------------
@@ -35,7 +37,17 @@ console.log(document.URL);
 if ( document.URL === "http://gsapp-red-scratch.tumblr.com/" ) 
 {
 	console.log('text-body hidden');
-	$(".text-body").css("display",'none');
+	//$(".text-body").css("display",'none');
+	$(".text-body p").each(function(i){
+		if(i > 1){
+			$(this).css('display', 'none');
+		}else{
+			var str = $(this).text();
+			
+			$(this).html( _(str).prune(100) );
+		}
+	});
+	
 }
 else
 {

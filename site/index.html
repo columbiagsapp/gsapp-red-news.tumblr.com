@@ -74,7 +74,7 @@
         <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.masonry.min.js"></script>
     {/block:IfUseMultiColumnLayout}
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/arrow_top.js"></script>
-    <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/truncator.js"></script>
+    <script type="text/javascript" src="http://scratch.postfog.org/js/underscore.string.min.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/jquery.infinitescroll.min.js"></script>
     <script type="text/javascript" src="http://www.columbia.edu/cu/arch/tumblr/js/gsappworkshared.js"></script>
     <script type="text/javascript" src="http://scratch.postfog.org/REDN_script.js"></script>
@@ -316,7 +316,19 @@
               <div class="date_type">
                 <div class="date">{block:Date}{DayOfMonth} {Month}, {Year}{/block:Date} </div>
                         
-                <div class="type">{PostType} </div>
+                <div class="type">
+                  {block:HasTags} 
+                  <ul class="tags-post-header">
+                  {block:Tags}
+                    <li class="tag-post-header">{Tag}</li>
+                  {/block:Tags}
+                  </ul>
+
+                  {/block:HasTags}
+
+                  {PostType}
+                </div>
+
               </div>
           
 		  	{block:Permalink}
@@ -401,7 +413,7 @@
 	<div class="permalink">
 		<div class="tags">      
 		  
-	 {block:HasTags}-----
+	 {block:HasTags}&mdash;
 	  {block:Tags}
 		<a class="{Tag}" href="{TagURL}">{Tag}</a>&nbsp;
 	  {/block:Tags}<br />
