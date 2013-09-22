@@ -379,14 +379,18 @@
           </div>
 			{block:Title}<p class="text-title">{Title}<!--a href="{Permalink}"></a--></p>{/block:Title}
 			<div class="text-body">{Body} <br> <!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style ">
-<a class="addthis_button_preferred_1" style="background-image:url('http://s24.postimg.org/dv68yp7dt/FB_blue.gif');"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4" style="display: none;"></a>
-<a class="addthis_button_compact" style="display: none;"></a>
-<a class="addthis_counter addthis_bubble_style style="display: none;"></a>
-</div>
+
+        {/block:PermalinkPage}
+          <div class="addthis_toolbox addthis_default_style ">
+            <a class="addthis_button_preferred_1" style="background-image:url('http://s24.postimg.org/dv68yp7dt/FB_blue.gif');"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4" style="display: none;"></a>
+            <a class="addthis_button_compact" style="display: none;"></a>
+            <a class="addthis_counter addthis_bubble_style" style="display: none;"></a>
+          </div>
+        {/block:PermalinkPage}
+
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f2088e20e765fc7"></script>
 <!-- AddThis Button END --></div>
