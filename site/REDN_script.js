@@ -6,30 +6,24 @@ console.log("REDN Loaded");
 // MOVE, FADE FEATURES FOR LOGO -------------
 
 $(window).scroll(function(){
-				var scrollTop = 150;
+	var scrollTop = 150;
 
-				var scrolled = $(window).scrollTop();
-				//console.log(scrolled);
-				if(scrolled >= scrollTop){	
-					$('#logo').css({position: 'fixed', top: '-120px'})
-					$('#nav').css({position: 'fixed', top: '144px'})
-					//$('#blogroll').css({position: 'relative', 'margin-top': '260px'})
-					//console.log('fixed');
+	var scrolled = $(window).scrollTop();
+	console.log(scrolled);
+	if(scrolled >= scrollTop){	
+		$('#logo').css({position: 'fixed', top: '-135px'});
+		$('#nav').css({position: 'fixed', top: '90px'});
+	}
+	if(scrolled < scrollTop){	
+		$('#logo').css({position: 'relative', top: '0px'});
+		$('#nav').css({position: 'relative', top: '0px'});
+		$('#blogroll').css({position: 'relative', 'margin-top': '0px'});
+	}
 
+	var opacityfactor = scrolled/scrollTop;
+	$("#headerfademask").css({'opacity': opacityfactor});
 
-					}
-				if(scrolled < scrollTop){	
-					$('#logo').css({position: 'relative', top: '0px'})
-					$('#nav').css({position: 'relative', top: '0px'})
-					$('#blogroll').css({position: 'relative', 'margin-top': '0px'})
-
-
-				}
-
-				var opacityfactor = scrolled/140;
-				$("#headerfademask").css({'opacity': opacityfactor});
-
-				});//end window scroll
+});//end window scroll
 
 
 // EXPAND TEXT FOR POST -------------------
@@ -40,38 +34,43 @@ console.log(document.URL);
 
 
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/") {
-	$('#filterall').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filterall').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/alumni") {
-	$('#filteralumni').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filteralumni').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/alumni-profile") {
-	$('#filteralumniprofile').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filteralumniprofile').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/class2014") {
-	$('#filterclass2014').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filterclass2014').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/cure") {
-	$('#filtercure').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filtercure').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/interdisciplinary") {
-	$('#filterinterdis').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filterinterdis').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/guest") {
-	$('#filterguest').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filterguest').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 if (document.URL == "http://gsapp-red-scratch.tumblr.com/tagged/durst") {
-	$('#filterdurst').attr("src", 'http://scratch.postfog.org/filteron.png');
+	$('#filterdurst').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
 
 }
 
+$('.post-permalink-target').hover(function(){
+	$(this).closest('.post').css('background', 'url(http://scratch.postfog.org/red-news/hover_bg.png)');
+}, function(){
+	$(this).closest('.post').css('background', '');
+});
 
 
 
