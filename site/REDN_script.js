@@ -57,7 +57,7 @@ function fetchCCPosts(){
 			$('#cc-feed').append( $html.join('') );
 
 			$('.cc-title').hover(function(){
-				$(this).closest('.cc-post').css('background', 'url(http://scratch.postfog.org/red-news/hover_bg.png)');
+				$(this).closest('.cc-post').css('background', 'url(http://www.columbia.edu/cu/arch/red-news/hover_bg.png)');
 			}, function(){
 				$(this).closest('.cc-post').css('background', '');
 			});
