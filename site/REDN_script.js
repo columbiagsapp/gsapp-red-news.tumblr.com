@@ -130,7 +130,7 @@ function fetchEvents(){
 			$('#events-feed').append( $html.join('') );
 
 			$('.event-title').hover(function(){
-				$(this).closest('.event').css('background', 'url(http://scratch.postfog.org/red-news/hover_bg.png)');
+				$(this).closest('.event').css('background', 'url(http://www.columbia.edu/cu/arch/red-news/hover_bg.png)');
 			}, function(){
 				$(this).closest('.event').css('background', '');
 			});
@@ -173,36 +173,36 @@ $(window).scroll(function(){
 
 
 if (document.location.pathname == "/") {
-	$('#filterall').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filterall').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
 if (document.location.pathname == "/tagged/alumni") {
-	$('#filteralumni').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filteralumni').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 }
 
 if (document.location.pathname == "/tagged/class-of-2014") {
-	$('#filterclass2014').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filterclass2014').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
 if (document.location.pathname == "/tagged/cure") {
-	$('#filtercure').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filtercure').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
 if (document.location.pathname == "/tagged/interdisciplinary") {
-	$('#filterinterdis').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filterinterdis').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
 if (document.location.pathname == "/tagged/guest") {
-	$('#filterguest').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filterguest').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
 if (document.location.pathname == "/tagged/durst") {
-	$('#filterdurst').attr("src", 'http://scratch.postfog.org/red-news/filteron.png');
+	$('#filterdurst').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
 
 $('.post-permalink-target').hover(function(){
-	$(this).closest('.post').css('background', 'url(http://scratch.postfog.org/red-news/hover_bg.png)');
+	$(this).closest('.post').css('background', 'url(http://www.columbia.edu/cu/arch/red-news/hover_bg.png)');
 }, function(){
 	$(this).closest('.post').css('background', '');
 });
