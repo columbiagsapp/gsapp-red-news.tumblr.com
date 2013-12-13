@@ -200,6 +200,10 @@ if (document.location.pathname == "/tagged/durst") {
 	$('#filterdurst').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
 
 }
+if (document.location.pathname == "/tagged/travel") {
+	$('#filtertravel').attr("src", 'http://www.columbia.edu/cu/arch/red-news/filteron.png');
+
+}
 
 $('.post-permalink-target').hover(function(){
 	$(this).closest('.post').css('background', 'url(http://www.columbia.edu/cu/arch/red-news/hover_bg.png)');
