@@ -1,0 +1,653 @@
+body {
+  padding: 0; 
+  margin: 0;
+  background: #FFFFFF;
+  font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+    
+h1 a, h1 {
+  color: #000; line-height: 1.2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  margin: auto; 
+}
+    
+h1 a:hover { 
+	color: inherit; 
+	border-bottom: solid 2px;
+}
+
+h2{
+  font-family:'Times LT W01 Roman', Times, "Times New Roman", Baskerville, serif;
+  font-weight:200;
+  font-size:40px;
+  line-height:44px;
+  margin:15px 0 0;
+  padding:0;
+}
+    
+    
+h3 { 
+  font-size: 12px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+    
+object { 
+  margin-bottom: 1em; 
+  margin-top: 0.5em; 
+}
+    	
+p, pre { 
+  margin-top: 0; 
+  padding-top: 0; 
+}
+    	
+img {
+  display: block; 
+  margin-bottom: 20px; 
+  margin-top: 0px; 
+}
+    	
+a {
+  color:inherit;
+  text-decoration: underline;
+} 
+    
+a:hover { 
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 a{
+  text-decoration: none;
+}
+
+#nav a{
+  text-decoration: none;
+  line-height: 25px;
+  display: block;
+}
+
+#nav a:hover{
+  color:#0038a8;
+  border:none;
+  text-decoration: none;
+}
+
+a img { 
+  outline: 0; 
+  border: none; 
+}
+
+   
+.text.post blockquote,
+.post.quote blockquote,
+blockquote {  
+  margin-left: -30px; 
+  padding-left: 30px; 
+  color: #222;
+  top left no-repeat; 
+  font-style: italic;
+  margin-top: 0; 
+}
+    
+    
+/* for nested blockquotes */
+blockquote blockquote { margin-left: 0; }
+blockquote em { font-style: normal; }
+blockquote ul, blockquote ol { padding-left: 2em; }
+ul, ol { padding-left: 0; }
+    
+
+
+
+
+/* Nav */
+
+  
+  
+#pager {width: 250px;}
+#past { float: left; } 
+#future { float: right; margin-right: 4px; } 
+#page { float: left; width: 300px; text-align: center; color: #666; }
+
+ul li{
+  list-style-type: none !important;
+  margin: 0px 0;
+}
+    
+    /* Various repeated elements. */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+ 
+* html .clearfix {
+  height: 1%;
+}
+
+a.follow {
+  float: right !important;
+  border-bottom: none !important;
+}
+	
+
+.hidden-permalink{
+  display: none;
+}
+
+.tags {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  margin-top: 1em;
+}
+    
+
+
+.permalink {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal !important;
+  margin-top: 1em;
+}
+
+    
+.permalink a,
+.tags a {
+  text-decoration: none;
+  border-bottom: none;
+}
+    
+.permalink a:hover,
+.tags a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.label { font-weight: bold; }
+
+body#permalink-page div.realpost {
+  margin-bottom: 2em;
+}
+    
+div.audio embed { margin-top: .3em; margin-bottom: 1em; }
+img.album-art { float: right; padding-left: 2em; height: 100px; width: 100px; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+	
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+	
+    
+div.chat ol {
+  list-style: none; margin-top: 0;
+}
+      
+    /* In case you want to quote in quote post, we need to distinguish
+       *the* quote from any other blockquotes in the post. */
+blockquote.thequote { 
+  line-height: 1.25;
+}
+
+.search_query { font-weight: bold; }
+
+
+/* Select2 */
+
+.select2-drop ul, .select2-drop li{
+  margin:0 !important;
+}
+
+.select2-search-choice-close:hover{
+  text-decoration: none !important;
+  border:none !important;
+}
+
+/* -----------  RED CUSTOM CSS (@ebberly) ---------------------------------------------------*/
+
+
+#wrapper {
+  padding: 15px 30px;
+  position:absolute;
+  left:20%;
+}
+    
+#header {
+  width: 100%;
+  height: 205px;
+  background-color:#FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0 0 0px;
+  clear: both;
+  z-index: 100;
+  margin:0 0 34px;
+}
+
+/* Header */
+#logo,
+#logo a{
+  float: left;
+  border-bottom: none !important;
+  z-index:400;
+  height:200px;
+}
+
+#badge {
+  position:fixed;
+  right:640px;
+  top:50px;
+}
+
+#blogroll {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 270px;
+  width:440px;
+}
+
+/*--- Post General --------*/
+
+.post {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow:hidden;
+  word-wrap: break-word;
+  width:100%;
+}
+
+.post .text,
+.post .link,
+.post .photo,
+.post .photoset,
+.post .video,
+.post .answer,
+.post .quote{
+  width:100%;
+  margin-bottom:10px;
+}
+
+.text embed,
+.text iframe,
+.text object,
+.link embed,
+.link iframe,
+link object {
+  width: 440px;
+  height: auto;
+}
+
+img{
+  max-width:100%;
+}
+
+/*--- Post Header  --------*/
+
+.date_type {
+  font-size: 12px;
+  color:#007eff;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.read_more{
+  font-size: 12px;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.read_more:hover{
+  color:#0038a8;
+  border:none;
+}
+
+.date_type{
+  font-weight: normal;
+  display: block;
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+.event .date_type{
+  height:20px;
+}
+
+.date {
+  float:left;
+
+}
+
+.type {
+  float:right;
+  width:150px;
+  margin:0;
+}
+
+#sidebar-right .type{
+  width:115px;
+}
+
+.type-tag:not(:first-child){
+  display: none;
+}
+
+.type{
+  overflow:hidden;
+  height:17px;
+}
+
+
+/* --- Post Body ------- */
+
+
+
+
+
+
+.post {
+  border-top:1px solid #000;
+  padding-top:15px;
+  margin-bottom:0px;
+  padding-bottom:28px;
+}
+
+.post p{
+  margin-bottom:7px;
+}
+
+
+
+div.realpost { margin-bottom: 0px; }
+
+
+#CU_logo {
+  position:fixed;
+  right:560px;
+  top:10px;
+  z-index: 250;
+  
+}
+
+/*--- Filters and Links -------*/
+
+#nav{
+  position:absolute;
+  margin:0px;
+  width:200px;
+  overflow: auto;
+  font-family:'HelveticaNeueW01-75';
+  font-size:25px;
+  /*border-bottom: 1px solid #000;*/
+  z-index: 500;
+  background-color:#efefef;
+  padding:5px;
+}
+
+#nav li.break{
+  height:7px;
+  display: block;
+}
+
+.menu-section{
+	list-style: none;
+	border-top:1px solid black;
+	margin:0;
+    padding:14px 0;
+}
+
+#filters {      
+    display:inline;
+    padding-left: 0px;
+    padding-top:2px;
+    padding-bottom:7px;
+}
+
+#external-links{
+  border-top: 1px solid #000;
+  width:100%;
+}
+
+
+
+.external_link {
+  font-family: 'HelveticaNeueW01-55Roma';
+  border: 1px solid black;
+  padding: 0;
+  margin-top: 4px;
+  font-size: 9px;
+  white-space: nowrap;
+  z-index: 500;
+  display: block;
+  float: left;
+  margin-right: 4px;
+}
+
+.external_link a{
+  padding: 0 4px;
+}
+
+#external-links a:hover {
+  background-color: #0038a8;
+  color:#ffffff;
+}
+
+ul li {
+padding-bottom:2px;
+}
+
+
+.filter_select {
+  position:relative;
+  display:inline;
+  float:left;
+  margin-top: 3px;
+  margin-bottom:2px;
+  margin-right:7px;
+  
+  /*width:8px;
+  height:8px;
+  font-size:8px;
+  background-color: white;
+  border:1px solid black;
+  padding-right:8px;
+  margin-bottom:2px;*/
+}
+
+
+
+.video iframe{
+  width:440px;
+  margin:0px;
+}
+
+
+
+/* ----- MASKS ----------------------*/
+
+#topmask {
+  position: fixed;
+  height:13px;
+  width:100%;
+  background:white;
+  z-index: 1000;
+}
+
+#blogrollmask {
+  position: fixed;
+  height:90px;
+  width:100%;
+  background:white;
+  z-index: 50;
+}
+
+#headerfademask {
+  position: absolute;
+  height:161px;
+  width:500px;
+  background:white;
+  z-index: 200;
+  opacity:0;
+
+}
+
+.text-title {
+cursor: pointer;
+
+}
+
+/* ----- @kyong in browser css ---- */
+
+.line {
+        border-top:1px black solid;
+        width: 20px;
+        height: 1px;
+        margin-top: 2px;
+        display: inline;
+    }
+
+.text-body {
+ font-weight: normal;
+line-height: 1.5em;
+}
+
+.tags {
+  font-size: 12px;
+  font-family: TimesNewRoman, "Times New Roman", Times,  Georgia, serif;
+  font-weight: normal !important;
+  border:none;
+  margin:0 0 7px;
+  display: block;
+}
+
+.tags li{
+  display: inline;
+}
+
+.tags li:last-child .comma{
+  display: none;
+}
+
+
+.date_type {
+font-weight: normal;
+}
+
+.col {
+margin: 0 5px 0 0;
+width: 150px;
+float: left;
+position: relative;
+max-width: 140px;
+height: 100%;
+}
+
+.col img {
+width: 100%;
+height: 100%;
+max-width: 100px;
+max-height: 125px;
+margin: 10px 0 5px 0;
+}
+
+#gsapp-logo {
+margin-top: 10px;
+padding-top:10px;
+overflow: hidden;
+border-top: 1px solid #000;
+}
+
+
+
+.tags {
+display: inline;
+font-size: 14px;
+font-color: 
+}
+
+.caption{
+  margin-bottom:10px;
+}
+
+
+body {
+background-color: transparent;
+}
+.post:hover {
+/*background-color: black;*/
+}
+.text-body {
+margin: 15px 0;
+}
+#people {
+margin-left: 160px;
+}
+
+#header img{
+  margin-bottom:0;
+}
+
+
+/* Sidebar Right */
+#sidebar-right{
+  position:absolute;
+  margin-left:730px;
+  width: 250px;
+}
+
+.cc-post,
+.event{
+  border-top:1px solid #000;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.cc-title,
+.event-title,
+.cc-title:hover,
+.event-title:hover{
+  font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:normal;
+  font-size:12px;
+  text-align: left;
+  text-decoration:none;
+}
+
+.event .event-location{
+  height: 17px;
+  line-height: 14px;
+  clear: both;
+}
+
+.hierarchical-select-item-separator{
+  padding:0 3px;
+}
+
+ul#static-links{border:none;}
+
+div.post div.col {height:auto;}
+div.post div.col div {height:180px;}
