@@ -1,0 +1,27 @@
+{
+    "name": "Real Estate Development News",
+    "url": "gsapp-red-news.tumblr.org",
+    "version": "1.0",
+    "thumbnail": "screenshot.png",
+    "contributors": [
+        {
+            "name": "Troy Conrad Therrien",
+            "username": "troyth",
+            "role": "lead"
+        },
+        {
+            "name": "Ebberly Strathairn",
+            "username": "ebberly",
+            "role": "developer"
+        },
+        {
+            "name": "Kyong Kim",
+            "username": "kyongkim",
+            "role": "designer"
+        }
+
+    ],
+    "dependencies": [
+
+    ]
+}
